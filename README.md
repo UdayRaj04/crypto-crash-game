@@ -32,24 +32,24 @@ An online real-time multiplayer crash game where players bet in USD, converted t
 
 - http://localhost:5000/client.html
 
-
+ ![image info](images/gamelive.png)
 
 ## 📦 get cash
 
-
+ ![image info](images/amount%20.png)
 
 
 ## 📦 post addcash
 
- 
+ ![image info](images/addamount.png)
 
 ## 📦 post bet
 
-
+![image info](images/bet.png)
 
 ## 📦 post cashout
 
-
+![image info](images/cashout.png)
 
 
 ## 📦 Installation
