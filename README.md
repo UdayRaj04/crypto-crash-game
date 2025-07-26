@@ -2,6 +2,32 @@
 
 An online real-time multiplayer crash game where players bet in USD, converted to crypto, and try to cash out before the multiplier crashes.
 
+## live ("https://crypto-crash-game-nvw3.onrender.com/client.html")
+- **gamelive**  "https://crypto-crash-game-nvw3.onrender.com/client.html"
+- **postman get cash**  "https://crypto-crash-game-nvw3.onrender.com/api/wallet/uday1"
+
+- **postman post addcash**  "https://crypto-crash-game-nvw3.onrender.com/api/wallet/add"
+            {
+                 "userId": "uday1",
+                 "currency": "BTC",
+                "amount": 10
+            }
+- **postman post bet**  "https://crypto-crash-game-nvw3.onrender.com/api/game/bet"
+                {
+                  "userId": "uday1",
+                  "usdAmount": 15,
+                     "currency": "BTC"
+                }
+
+- **postman post cashout**  "https://crypto-crash-game-nvw3.onrender.com/api/game/cashout"
+                {
+                    "userId": "uday1",
+                     "multiplier": 2,
+                     "cryptoAmount": 0.0013384696096599227,
+                     "currency": "BTC"
+                }
+
+
 ## 📄 Problem Statement
 
 <a href="https://github.com/UdayRaj04/crypto-crash-game/blob/main/sixtynine assignment.pdf" target="_blank">
@@ -35,7 +61,7 @@ An online real-time multiplayer crash game where players bet in USD, converted t
 
 ---
 
-## 📦  See Game Live
+## 📦  See Game Live   **LOCAL MACHINE**
 
 - http://localhost:5000/client.html
 
