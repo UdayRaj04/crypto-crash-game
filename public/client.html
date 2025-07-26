@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Crypto Crash Client</title></head>
+<body>
+  <h1>Crash Game Updates</h1>
+  <pre id="log"></pre>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script>
+    const socket = io("http://localhost:5000");
+    const log = document.getElementById("log");
+
+    socket.on("round_start", data => log.innerText += "\nRound started: " + JSON.stringify(data));
+    socket.on("multiplier_update", data => log.innerText += "\nMultiplier: " + data.multiplier);
+    socket.on("round_crash", data => log.innerText += "\nCRASH at: " + data.crashPoint);
+  </script>
+</body>
+</html>
