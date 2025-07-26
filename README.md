@@ -4,7 +4,7 @@ An online real-time multiplayer crash game where players bet in USD, converted t
 
 ## 📄 Problem Statement
 
-<a href="https://github.com/UdayRaj04/crypto-crash-game/blob/mainsixtynine assignment.pdf" target="_blank">
+<a href="https://github.com/UdayRaj04/crypto-crash-game/blob/main/sixtynine assignment.pdf" target="_blank">
   <img src="https://img.shields.io/badge/View%20PDF-Click%20Here-green?style=for-the-badge&logo=adobeacrobatreader" alt="View PDF"/>
 </a>
 
