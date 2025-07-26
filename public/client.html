@@ -6,7 +6,12 @@
   <pre id="log"></pre>
   <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
   <script>
-    const socket = io("http://localhost:5000");
+    const socket = io(
+  window.location.hostname === "localhost"
+    ? "http://localhost:5000"
+    : "https://crypto-crash-game-nvw3.onrender.com"
+);
+
     const log = document.getElementById("log");
 
     socket.on("round_start", data => log.innerText += "\nRound started: " + JSON.stringify(data));
