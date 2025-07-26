@@ -2,6 +2,13 @@
 
 An online real-time multiplayer crash game where players bet in USD, converted to crypto, and try to cash out before the multiplier crashes.
 
+## 📄 Problem Statement
+
+<a href="https://github.com/UdayRaj04/crypto-crash-game/blob/mainsixtynine assignment.pdf" target="_blank">
+  <img src="https://img.shields.io/badge/View%20PDF-Click%20Here-green?style=for-the-badge&logo=adobeacrobatreader" alt="View PDF"/>
+</a>
+
+
 ---
 
 ## 🚀 Features
