@@ -11,6 +11,7 @@ const txSchema = new mongoose.Schema({
   transactionType: String, // bet or cashout
   transactionHash: String,
   priceAtTime: Number,
+  multiplier: Number,
   timestamp: Date,
 });
 

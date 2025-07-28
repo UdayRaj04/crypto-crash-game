@@ -5,7 +5,7 @@ const gameRoundSchema = new mongoose.Schema({
   crashPoint: Number,
   bets: [
     {
-      userId: mongoose.Schema.Types.ObjectId,
+      userId: String, // <-- CHANGED from ObjectId to String
       usdAmount: Number,
       cryptoAmount: Number,
       currency: String,
