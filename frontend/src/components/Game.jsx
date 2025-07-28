@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import socket from "../socket";
 
-const BASE_URL = window.location.hostname === "localhost"
-  ? "http://localhost:5000"
-  : "https://crypto-crash-game-nvw3.onrender.com";
+const BASE_URL =  "https://crypto-crash-game-nvw3.onrender.com";
 
 const Game = ({ userId }) => {
   const currency = "BTC";
