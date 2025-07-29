@@ -20,7 +20,7 @@ const io = new Server(server, {
   cors: {
     origin: [
       "http://localhost:5173", 
-      "https://crypto-crash-game-nvw3.onrender.com"
+      "https://crypto-crash-fjy8.onrender.com"
     ], // ✅ allow both local dev & deployed frontend
     methods: ["GET", "POST"],
     credentials: true,
@@ -36,7 +36,7 @@ connectDB();
 
 app.use("/api/game", gameRoutes);
 app.use("/api/wallet", walletRoutes);
-app.use(express.static("public"));
+// app.use(express.static("public"));
 
 io.on("connection", (socket) => {
   console.log("Socket connected:", socket.id);
