@@ -21,6 +21,7 @@ const Game = ({ userId }) => {
       const res = await axios.get(`${BASE_URL}/api/wallet/${userId}`);
       if (Array.isArray(res.data) && res.data.length > 0) {
         setBalance(res.data[0].balance);
+        logMsg("💵 wallet= ",res.data[0].balance);
       }
     } catch {
       logMsg("❌ Failed to fetch balance");
@@ -52,7 +53,7 @@ const Game = ({ userId }) => {
       });
       const credited = res.data.cryptoAmount;
       setCryptoAmount(credited);
-      logMsg(`🎯 Bet Placed: $${betAmount} → cashout`);
+      logMsg(`🎯 Bet Placed: $${betAmount} → cashout in this round`);
       fetchBalance();
     } catch (err) {
       logMsg("❌ Bet failed: " + (err.response?.data?.message || "Unknown error"));
