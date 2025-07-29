@@ -13,13 +13,27 @@ const App = () => {
 
   return (
     <div className="container">
+    <div className="top">
       <h1 className="title">🚀 Crypto Crash Game</h1>
-      
-      <div className="tog">
+
+<div style={{ textAlign: "center", marginBottom: "1.5rem",marginTop:"1.5rem" }}>
+  <a
+    href="https://github.com/UdayRaj04/crypto-crash-game" // ← replace with your actual GitHub URL
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button style={{ padding: "8px 16px", fontSize: "1rem", backgroundColor: "#24292e" }}>
+      ⭐ View on GitHub
+    </button>
+  </a>
+</div>
+<div className="tog">
         <button onClick={() => setDarkMode(!darkMode)}>
           Toggle {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
         </button>
       </div>
+</div>
+      
 
       <div className="input-group">
         <div className="start">

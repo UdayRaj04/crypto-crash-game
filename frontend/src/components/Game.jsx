@@ -21,7 +21,7 @@ const Game = ({ userId }) => {
       const res = await axios.get(`${BASE_URL}/api/wallet/${userId}`);
       if (Array.isArray(res.data) && res.data.length > 0) {
         setBalance(res.data[0].balance);
-        logMsg("💵 wallet= ",res.data[0].balance);
+        logMsg(`💵 Wallet = ${res.data[0].balance}`);
       }
     } catch {
       logMsg("❌ Failed to fetch balance");

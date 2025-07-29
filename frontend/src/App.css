@@ -32,6 +32,10 @@ body {
   margin: auto;
   padding: 5px 2rem;
 }
+.top{
+  display:flex ;
+  justify-content: space-around;
+}
 
 .title {
   text-align: center;
@@ -39,7 +43,7 @@ body {
   margin-bottom: 1rem;
   font-weight: bold;
 }
-.tog{ margin-bottom: 200px; text-align: center;margin: 5px; float: right;}
+.tog{ text-align: center;margin: 5px;  margin-top: 1.5rem ;}
 
 .input-group {
   display: flex;

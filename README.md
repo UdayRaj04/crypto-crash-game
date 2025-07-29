@@ -2,9 +2,54 @@
 
 An online real-time multiplayer crash game where players bet in USD, converted to crypto, and try to cash out before the multiplier crashes.
 
-## live ("https://crypto-crash-game-nvw3.onrender.com/client.html")
-- **gamelive**  "https://crypto-crash-game-nvw3.onrender.com/client.html"
-- **postman get cash**  "https://crypto-crash-game-nvw3.onrender.com/api/wallet/uday1"
+## 🔗 Live Links
+- **Frontend Live**: [https://crypto-crash-fjy8.onrender.com](https://crypto-crash-fjy8.onrender.com)
+
+- **Backend Live**: [https://crypto-crash-game-nvw3.onrender.com](https://crypto-crash-game-nvw3.onrender.com)
+
+
+## 📄 Problem Statement
+
+<a href="https://github.com/UdayRaj04/crypto-crash-game/blob/main/sixtynine assignment.pdf" target="_blank">
+  <img src="https://img.shields.io/badge/View%20PDF-Click%20Here-green?style=for-the-badge&logo=adobeacrobatreader" alt="View PDF"/>
+</a>
+
+
+---
+
+## 🎮 How It Works
+
+1. Players place a bet in USD.
+2. The multiplier starts increasing (e.g., 1.01x, 1.50x, etc.).
+3. Cash out before the crash to win based on the current multiplier.
+4. If the multiplier crashes before you cash out, you lose the bet.
+
+---
+
+## ✨ Features
+
+- 🪙 Real-time crypto wallet (with USD & BTC)
+- ⚡ Live multiplier updates via WebSocket
+- 💰 Bet & Cash Out functionality
+- 📊 Game logs and history
+- 🌓 Light/Dark Mode toggle
+- 🔄 Auto wallet refresh every 5 seconds
+
+---
+
+## 🧱 Tech Stack
+
+| Frontend        | Backend         | Database     | Realtime       |
+|----------------|------------------|--------------|----------------|
+| React (Vite)   | Node.js + Express| MongoDB Atlas| Socket.IO      |
+
+---
+
+## ⚙️ API Endpoints
+### Wallet Operations
+**Get Balance**  
+`GET /api/wallet/:userId`  
+Example: [https://crypto-crash-game-nvw3.onrender.com/api/wallet/uday1](https://crypto-crash-game-nvw3.onrender.com/api/wallet/uday1)
 
 - **postman post addcash**  "https://crypto-crash-game-nvw3.onrender.com/api/wallet/add"
             {
@@ -28,44 +73,49 @@ An online real-time multiplayer crash game where players bet in USD, converted t
                 }
 
 
-## 📄 Problem Statement
 
-<a href="https://github.com/UdayRaj04/crypto-crash-game/blob/main/sixtynine assignment.pdf" target="_blank">
-  <img src="https://img.shields.io/badge/View%20PDF-Click%20Here-green?style=for-the-badge&logo=adobeacrobatreader" alt="View PDF"/>
-</a>
+## 📦 Installation
+
+### 🔧 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/crypto-crash-game.git
+cd crypto-crash-game
+--- 
+### 2. Configure Environment Variables
+Create a .env file in the root directory: and add
+MONGO_URI=your_mongodb_connection_string
 
 
+## 📦 Installation
+- change  in .env
+- MONGO_URI=   your mongodburl
+
+```bash clone
+git clone https://github.com/yourusername/crypto-crash-game.git
 ---
 
-## 🚀 Features
-
-- Real-time **multiplier growth and crash**
-- Provably fair crash point generation
-- **Crypto price conversion** using CoinGecko API
-"https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd"
-- USD ↔ BTC/ETH conversion
-- Wallet system with balance tracking
-- Real-time updates via **Socket.IO**
-- REST API for placing bets, cashouts, checking balances , add balances
-- MongoDB (Atlas ready)
-
+```bash backend
+cd crypto-crash-game
+npm install
+npm run dev
 ---
 
-## ⚙️ Tech Stack
+```bash Frontend in new terminal
+cd frontend
+npm install
+npm run dev
+--
 
-- Node.js + Express
-- Socket.IO (WebSockets)
-- MongoDB + Mongoose
-- CoinGecko API
-- Crypto module for secure randomness
 
----
+
 
 ## 📦  See Game Live   **LOCAL MACHINE**
 
-- http://localhost:5000/client.html
+-  backend live --  http://localhost:5000
+- Frondend live -- http://localhost:5173
 
- ![image info](images/gamelive.png)
+
+ ![image info](images/frontend.png)
 
 ## 📦 get cash
 
@@ -83,18 +133,6 @@ An online real-time multiplayer crash game where players bet in USD, converted t
 ## 📦 post cashout
 
 ![image info](images/cashout.png)
-
-
-## 📦 Installation
-- change  in .env
-- MONGO_URI=   your mongodburl
-
-```bash
-git clone https://github.com/yourusername/crypto-crash-game.git
-cd crypto-crash-game
-npm install
-npm run dev
----
 
 
 
