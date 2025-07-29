@@ -36,6 +36,26 @@ const App = () => {
         <div>
           <Wallet userId={userId} />
         </div>
+        <div className="card">
+  <h2>📝 How to Play</h2>
+
+  <h3>✅ Steps:</h3>
+  <ul>
+    <li><strong>Initialize</strong> your <em>User ID</em></li>
+    <li><strong>Add Cash</strong> to your wallet</li>
+    <li><strong>Bet</strong> and <strong>Cash Out</strong> wisely</li>
+    <li><strong>See All Logs</strong> of your actions</li>
+  </ul>
+
+  <h3>🎮 Game Rules:</h3>
+  <ul>
+    <li><strong>Bet</strong> before the round starts</li>
+    <li><strong>Multiplier</strong> increases in real time</li>
+    <li><strong>Cash Out</strong> before it crashes to win</li>
+    <li>If it <strong>crashes first</strong>, you lose the bet</li>
+  </ul>
+</div>
+
       </div>
 
       <Game userId={userId} />

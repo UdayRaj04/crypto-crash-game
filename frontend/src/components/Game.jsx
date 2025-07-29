@@ -108,7 +108,7 @@ const Game = ({ userId }) => {
       <p className="multiplier">x{multiplier.toFixed(2)}</p>
 
       <div className="button-group">
-        <button onClick={fetchBalance}>🔄 Refresh</button>
+        <button onClick={fetchBalance}>🔄 Refresh balance</button>
         <button onClick={addCash}>➕ Add $10</button>
       </div>
 
@@ -130,7 +130,7 @@ const Game = ({ userId }) => {
       </div>
 
       <div className="log">
-      <h3>Game Logs---------</h3>
+      <h3>Game Logs--------------some delay</h3>
         {log.map((entry, idx) => <div key={idx}>{entry}</div>)}
       </div>
     </div>
