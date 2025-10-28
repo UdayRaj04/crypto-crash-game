@@ -38,6 +38,14 @@ app.use("/api/game", gameRoutes);
 app.use("/api/wallet", walletRoutes);
 // app.use(express.static("public"));
 
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "OK",
+    message: "Server is healthy 🚀",
+    timestamp: new Date(),
+  });
+});
+
 io.on("connection", (socket) => {
   console.log("Socket connected:", socket.id);
   socket.on("disconnect", () => console.log("Disconnected:", socket.id));
